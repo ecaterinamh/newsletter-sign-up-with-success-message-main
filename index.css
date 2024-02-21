@@ -207,6 +207,12 @@ label {
 }
 
 /* media queries */
+@media only screen and (max-width: 992px) {
+  main {
+    position: relative;
+    top: 100px;
+  }
+}
 
 @media only screen and (max-width: 520px) {
   .button {
@@ -218,6 +224,8 @@ label {
 
 @media only screen and (max-width: 448px) {
   main {
+    position: static;
+
     justify-content: flex-start;
     align-items: center;
   }
