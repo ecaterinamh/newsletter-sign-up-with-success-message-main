@@ -35,7 +35,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 ### Links
 
 - Solution URL: [GitHub](https://github.com/ecaterinamh/newsletter-sign-up-with-success-message-main)
-- Live Site URL: [Live URL on Netlify](newsletter-sign-up-with-ok-message.netlify.app)
+- Live Site URL: [Live URL on Netlify](https://newsletter-sign-up-with-ok-message.netlify.app/)
 
 ### Built with
 
