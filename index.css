@@ -222,10 +222,9 @@ label {
   }
 }
 
-@media only screen and (max-width: 448px) {
+@media only screen and (max-width: 500px) {
   main {
     position: static;
-
     justify-content: flex-start;
     align-items: center;
   }
@@ -247,7 +246,7 @@ label {
   }
 
   .left {
-    height: 75%;
+    height: 70%;
     width: 100%;
     padding: 0;
     margin: 0;
