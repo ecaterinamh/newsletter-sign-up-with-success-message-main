@@ -34,8 +34,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Netlify](https://github.com/ecaterinamh/newsletter-sign-up-with-success-message-main)
+- Live Site URL: [Live URL on Netlify](newsletter-sign-up-with-ok-message.netlify.app)
 
 ### Built with
 
