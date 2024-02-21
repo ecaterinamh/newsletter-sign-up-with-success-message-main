@@ -1,0 +1,283 @@
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --darkSlateGrey: hsl(234, 29%, 20%);
+  --charcoalGrey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--darkSlateGrey);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  min-width: 20rem;
+  max-width: 50rem;
+  height: auto;
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 50%;
+  padding: 3rem 1rem 3rem 0;
+  margin: 0 2rem;
+}
+
+.right {
+  width: 41.5%;
+  height: 100%;
+  background-image: url("./assets/images/illustration-sign-up-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.mobilephoto {
+  display: none;
+}
+
+.right > img {
+  width: 100%;
+  height: 100%;
+}
+
+.left > h1 {
+  font-size: 3.2rem;
+  color: var(--darkSlateGrey);
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+p,
+ul {
+  color: var(--darkSlateGrey);
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: row;
+}
+
+li > div {
+  margin-left: 0.8rem;
+}
+
+li > img {
+  vertical-align: top;
+}
+
+li:last-of-type {
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--darkSlateGrey);
+  display: flex;
+  justify-content: space-between;
+}
+
+.email {
+  display: block;
+  margin: 0.5rem 0 1rem 0;
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px;
+  border: 1px solid var(--grey);
+  background-color: var(--white);
+  padding: 0.5rem 1.5rem;
+  outline: none;
+}
+
+.email:focus {
+  border: 1px solid black;
+  background-color: var(--white);
+  color: black;
+}
+
+.button,
+.buttonDismiss {
+  width: 100%;
+  height: 3rem;
+  background-color: var(--darkSlateGrey);
+  color: var(--white);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover,
+.buttonDismiss:hover {
+  background-color: var(--tomato);
+  border: none;
+  color: white;
+}
+
+.invalidEmail {
+  border: 1px solid #ff0000;
+  background-color: #ffd0d0;
+  color: #ff0000;
+  font-family: 500;
+}
+
+.showmessage {
+  display: none;
+  color: #ff0000;
+}
+
+/* confirmation-message */
+
+.confirmationMessage {
+  width: 25rem;
+  height: 25rem;
+  background-color: var(--white);
+  position: absolute;
+  left: calc(50% - 12rem);
+  top: calc(50% - 12rem);
+  z-index: 100;
+  border-radius: 25px;
+  padding: 2.5rem;
+}
+
+.confirmationMessage img {
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+
+.confirmationMessage > h1 {
+  color: var(--darkSlateGrey);
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.confirmationMessage > p {
+  font-size: 0.85rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  margin-top: 2rem;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 520px) {
+  .button {
+    width: 100%;
+    padding: 0 0rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 448px) {
+  main {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column-reverse;
+    padding: 0;
+    border-radius: unset;
+  }
+
+  .right {
+    width: 100%;
+    height: 30%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    background-image: url("./assets/images/illustration-sign-up-mobile.svg");
+  }
+
+  .left {
+    height: 75%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  .left > h1 {
+    font-size: 2.5rem;
+  }
+
+  li > img {
+    height: 21px;
+  }
+
+  li:last-of-type {
+    margin-bottom: 2rem;
+  }
+
+  .confirmationMessage {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    position: static;
+    border-radius: unset;
+    padding: 2.5rem;
+  }
+
+  .confirmationMessage > img {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .buttonDismiss {
+    width: 80%;
+    position: fixed;
+    bottom: 5rem;
+    margin: 0 auto;
+  }
+}
